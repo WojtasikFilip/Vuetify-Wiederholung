@@ -1,16 +1,20 @@
 <template>
   <v-app>
-    <v-main>
-      <v-container>
-        <p class="text-h2 text-center">Viel Erfolg!</p>
-      </v-container>
-    </v-main>
+    <LogoBar> </LogoBar>
   </v-app>
 </template>
 
 <script>
+import LogoBar from '@/components/LogoBar.vue';
+// import axios from 'axios';
 export default {
   name: 'App',
-  data: () => ({}),
+  cars: [],
+  components: {
+    LogoBar,
+  },
+  data: () => ({
+    //
+  }),
 };
 </script>

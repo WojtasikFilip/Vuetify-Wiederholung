@@ -1,26 +1,26 @@
 <template>
   <v-app>
     <LogoBar> </LogoBar>
-    <CarCards :cars="cars" />
+    <v-main>
+      <CarCards :cars="cars" :carRefresh="getCars()" />
+    </v-main>
   </v-app>
 </template>
 
 <script>
 import LogoBar from '@/components/LogoBar.vue';
 import CarCards from '@/components/CarCards.vue';
-// import CarCard from '@/components/CarCard.vue';
 import axios from 'axios';
+
 export default {
   name: 'App',
 
   components: {
     LogoBar,
     CarCards,
-    // CarCard,
   },
   data: () => ({
     cars: [],
-    //
   }),
   created() {
     this.getCars();

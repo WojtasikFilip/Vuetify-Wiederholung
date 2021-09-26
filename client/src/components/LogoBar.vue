@@ -1,6 +1,8 @@
 <template>
-  <v-app-bar class="black" max-height="130">
-      <v-img class="mx-5 mt-13" src="../../public/logo.png" max-height="230" max-width="230"></v-img>
+  <v-app-bar class="black" height="150">
+    <v-app-bar-title class="ml-5">
+      <v-img src="../../public/logo.png" max-height="100" max-width="290"></v-img>
+    </v-app-bar-title>
   </v-app-bar>
 </template>
 
